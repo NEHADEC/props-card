@@ -25,3 +25,9 @@ body {
     text-wrap: balance;
   }
 }
+.body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7RD-Re36D-TZ96bzyxV_eugET5k91jjJ37Q&s');
+  background-size: cover;  /* Ensures the image covers the entire background */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat;  /* Ensures the image doesn't repeat */
+}

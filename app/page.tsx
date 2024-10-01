@@ -1,101 +1,151 @@
+import React from "react";
 import Image from "next/image";
+import Student from "./students";
+import './globals.css'; 
 
-export default function Home() {
+function page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-cover bg-center bg-no-repeat h-100 w-100"
+    style={{
+      backgroundImage: "url('https://wallpaper.dog/large/10844664.png')",
+    }}
+    >
+      <div >
+      <br />
+      <br />
+      <h1 className="text-white text-center text-lg">
+        Students Registration Cards
+      </h1>
+      <br />
+      <br />
+      <div className=" px-10  my-15  shadow-x4 font-thin grid grid-cols-2 gap-5 place-content-around h-200 ...">
+        {/* first card */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="bg-purple-700 border-double border-4 border-black  text-white first-line:..text-center text-1x2 text-xs font-thin p-10">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg flex items-center justify-between">
+        <div className="flex-1">
+          <br />
+          <br />
+          <br />
+          <br />
+          <Student
+            name="Anaya"
+            age={20}
+            rollno={"00042309"}
+            Distancelearning={"No"}
+            city={"karachi"}
+            campus={"Main"}
+            center={"Governor House Karachi"}
+            Day={"Tuesday-2:00pm-05:00pm"}
+          />
+          <br />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <img 
+          className="w-20 h-20 object-cover" 
+          src="https://i.pinimg.com/736x/a3/24/fc/a324fc78b051a18ba0c4129d0bf04b72.jpg" 
+          alt="Descriptive Alt Text" 
+        />
+        </div>
+        </div>
+
+        {/* second card */}
+        
+    <div className="bg-blue-500 border-double border-4 border-black text-white first-line:..text-center text-1x2 text-xs font-thin p-10">
+      <div className="max-w-sm rounded overflow-hidden shadow-lg flex items-center justify-between">
+        <div className="flex-1">
+          <br />
+          <br />
+          <br />
+          <br />
+          <Student
+            name="Neha"
+            age={18}
+            rollno={"00062355"}
+            Distancelearning={"No"}
+            city={"Karachi"}
+            campus={"Main"}
+            center={"Governor House Karachi"}
+            Day={"Monday-2:00pm-05:00pm"}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <br />
+        </div>
+        <img 
+          className="w-20 h-20 object-cover" 
+          src="https://watermark.lovepik.com/photo/20220316/large/lovepik-professional-business-woman-office-likes-picture_502367524.jpg" 
+          alt="Descriptive Alt Text" 
+        />
+      </div>
+    </div>
+  
+
+
+
+        {/* third card
+         */}
+
+        
+        <div className="bg-orange-500 border-double border-4 border-black text-white first-line:..text-center text-1x2 text-xs font-thin p-10">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg flex items-center justify-between">
+        <div className="flex-1">
+          <br />
+          <br />
+          <br />
+          <br />
+          <Student
+            name="Nida"
+            age={17}
+            rollno={"0001256"}
+            Distancelearning={"No"}
+            city={"karachi"}
+            campus={"Main"}
+            center={"Governor House Karachi"}
+            Day={"Sunday-2:00pm-05:00pm"}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+        </div>
+        <img 
+          className="w-20 h-20 object-cover" 
+          src="https://www.shutterstock.com/image-photo/asian-businesswoman-gets-stressed-while-260nw-2161792433.jpg" 
+          alt="Descriptive Alt Text" 
+        />
+        </div>
+        </div>
+
+        {/* fourth*/}
+
+        <div className="bg-pink-500 border-double border-4 border-black text-white first-line: ..text-center text-1x2 text-xs font-thin p-10">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg flex items-center justify-between">
+        <div className="flex-1">
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <Student
+            name="Warisha"
+            age={19}
+            rollno={"0093487"}
+            Distancelearning={"No"}
+            city={"karachi"}
+            campus={"Main"}
+            center={"Governor House Karachi"}
+            Day={"Friday-2:00pm-05:00pm"}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <br />
+        </div>
+        <img 
+          className="w-20 h-20 object-cover" 
+          src="https://thumbs.dreamstime.com/b/business-woman-working-laptop-computer-office-63543303.jpg" 
+          alt="Descriptive Alt Text" 
+        />
+        </div>
+        </div>
+        <br />
+        <br />
+        
+      </div>
+    </div>
     </div>
   );
 }
+
+export default page;
